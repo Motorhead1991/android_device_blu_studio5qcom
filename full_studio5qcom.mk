@@ -24,14 +24,14 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from comanche device
-$(call inherit-product, device/blu/studio5-qcom/device.mk)
+$(call inherit-product, device/blu/studio5qcom/device.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_studio5-qcom
-PRODUCT_DEVICE := studio5-qcom
+PRODUCT_NAME := full_studio5qcom
+PRODUCT_DEVICE := studio5qcom
 PRODUCT_BRAND := blu
 PRODUCT_MANUFACTURER := Blu
 PRODUCT_MODEL := Studio 5.0 HD LTE
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=studio5-qcom TARGET_DEVICE=studio5.0 BUILD_FINGERPRINT="BLU/Studio5.0HDLTE/BLU:4.4.2/KVT49L/TBW570610_9670_V010027:user/release-keys" PRIVATE_BUILD_DESC="msm8226-user 4.4.2 KVT49L TBW570610_9670_V010027 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=studio5qcom TARGET_DEVICE=studio5.0 BUILD_FINGERPRINT="BLU/Studio5.0HDLTE/BLU:4.4.2/KVT49L/TBW570610_9670_V010027:user/release-keys" PRIVATE_BUILD_DESC="msm8226-user 4.4.2 KVT49L TBW570610_9670_V010027 release-keys"
 

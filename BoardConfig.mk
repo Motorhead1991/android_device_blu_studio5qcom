@@ -26,9 +26,9 @@
 USE_CAMERA_STUB := false
 
 # inherit from the proprietary version
-#-include vendor/blu/studio5-qcom/BoardConfigVendor.mk
+#-include vendor/blu/studio5qcom/BoardConfigVendor.mk
 
-TARGET_SPECIFIC_HEADER_PATH := device/blu/studio5-qcom/include
+TARGET_SPECIFIC_HEADER_PATH := device/blu/studio5qcom/include
 
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
@@ -39,9 +39,12 @@ TARGET_CPU_VARIANT := cortex-a7
 
 TARGET_BOOTLOADER_BOARD_NAME := MSM8226
 
-TARGET_OTA_ASSERT_DEVICE := studio5-qcom
+TARGET_OTA_ASSERT_DEVICE := studio5qcom
 
 BOARD_USES_QCOM_HARDWARE := true
+
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37
+BOARD_KERNEL_BASE := 0x82000000
 
 TARGET_USERIMAGES_USE_EXT4 := true
 
@@ -49,8 +52,8 @@ BOARD_BOOTIMAGE_PARTITION_SIZE := 16384000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16384000
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1048576000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 6303685000
-BOARD_FLASH_BLOCK_SIZE := 131072
-TARGET_RECOVERY_FSTAB := device/blu/studio5-qcom/rootdir/etc/fstab.qcom
+BOARD_FLASH_BLOCK_SIZE := 2049
+TARGET_RECOVERY_FSTAB := device/blu/studio5qcom/rootdir/etc/fstab.qcom
 
 DEVICE_RESOLUTION := 480x800
 TW_DEFAULT_EXTERNAL_STORAGE := true

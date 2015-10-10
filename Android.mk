@@ -21,6 +21,6 @@
 # are responsible for having their own logic, for fine-grained control.
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),studio5-qcom)
+ifeq ($(TARGET_DEVICE),studio5qcom)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif

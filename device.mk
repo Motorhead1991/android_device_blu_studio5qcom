@@ -17,10 +17,10 @@
 ## (2) Also get non-open-source specific aspects if available
 
 ## overlays
-DEVICE_PACKAGE_OVERLAYS += device/blu/studio5-qcom/overlay
+DEVICE_PACKAGE_OVERLAYS += device/blu/studio5qcom/overlay
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-  LOCAL_KERNEL := device/blu/studio5-qcom/kernel
+  LOCAL_KERNEL := device/blu/studio5qcom/kernel
 else
   LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
